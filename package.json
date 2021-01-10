@@ -1,0 +1,36 @@
+{
+  "name": "lendlord-widget",
+  "version": "1.0.0",
+  "description": "A widget of Lendlord",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development parcel src/index.html --open",
+    "build": "NODE_ENV=production parcel build dist/index.html --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^5.0.0",
+    "parcel-bundler": "^1.12.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+        "flexbox": "no-2009"
+      }
+    }
+  }
+}
